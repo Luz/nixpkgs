@@ -11491,6 +11491,8 @@ with pkgs;
 
   openfortivpn = callPackage ../tools/networking/openfortivpn { };
 
+  openfortivpn-webview = qt6Packages.callPackage ../tools/networking/openfortivpn-webview { };
+
   opensnitch = callPackage ../tools/networking/opensnitch/daemon.nix { };
 
   opensnitch-ui = libsForQt5.callPackage ../tools/networking/opensnitch/ui.nix { };
