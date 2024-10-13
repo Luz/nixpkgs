@@ -19,6 +19,8 @@ stdenv.mkDerivation rec {
     hash = "sha256-oFMjRFPM0BLnnzRDvcxhYlz5e3/Xy0zdi/v/vosUliM=";
   };
 
+  patches = [ ./b25q40as.patch ];
+
   nativeBuildInputs = [ pkg-config installShellFiles ];
   buildInputs = [ libftdi1 libusb1 ]
     ++ lib.optionals (!stdenv.hostPlatform.isDarwin) [ pciutils ]
