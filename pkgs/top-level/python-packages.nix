@@ -6857,6 +6857,8 @@ self: super: with self; {
 
   labmath = callPackage ../development/python-modules/labmath { };
 
+  laboneq = callPackage ../development/python-modules/laboneq { };
+
   laces = callPackage ../development/python-modules/laces { };
 
   lacuscore = callPackage ../development/python-modules/lacuscore { };
